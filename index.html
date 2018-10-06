@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <style>
+    h1, input::-webkit-input-placeholder, button {
+  font-family: 'roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  background: #18aa8d;
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+input {
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #0e6252;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.follow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  background: #03A9F4;
+  display: inline-block;
+  margin: 50px calc(50% - 21px);
+  white-space: nowrap;
+  padding: 13px;
+  box-sizing: border-box;
+  color: white;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.follow i {
+  margin-right: 20px;
+  transition: margin-right 0.2s ease;
+}
+.follow:hover {
+  width: 134px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.follow:hover i {
+  margin-right: 10px;
+}
+
+
+    </style>
+    <script>
+    function run() {
+      if(document.getElementById('in').value == "fake_rohan_id"){
+        document.getElementById('stanfurd').style.display = "block";
+        document.getElementById('stanfurd_p').style.display = "block";
+        document.getElementById('cal').style.display = "none";
+        document.getElementById('cal_p').style.display = "none";
+      }
+      else{
+        document.getElementById('stanfurd').style.display = "none";
+        document.getElementById('stanfurd_p').style.display = "none";
+        document.getElementById('cal').style.display = "block";
+        document.getElementById('cal_p').style.display = "block";
+      }
+  }
+  function verify(){
+    if (document.getElementById('in').value == "fake_rohan_id"){alert("FALSE. HE GOES TO CAL")}
+    else(alert("YESSS! GO BEARS"))
+  }
+
+    </script>
+  </head>
+  <body>
+
+<center>
+  <h1>SecurID</h1>
+  <input placeholder="Username" type="text" id = "in" required="">
+
+  <button onclick="run()">Claim</button>
+  <button onclick="verify()">Verify</button>
+
+</br></br></br>
+
+<img src = "cal.jpg" id = "cal" width="420px" height="auto" style="display:none">
+<img src = "stanford.jpg" id = "stanfurd" width="420px" height="auto" style="display:none;"></center>
+<p id = "stanfurd_p" style="display:none;">Rohan Jhunjhunwala|21|Stanford PhD</br>
+b'1;v\xac*#\xff\xdb\xcf<\x89\xf6o\xab\xd3:_\x9d\x85\xda\x15S`\xb6\xad\xed\x03\xd5`\xd7\\\xbd\x83\xd8\xed\x95_\xef^\xd2\xd5\x15p\xed\x9a\x19\xc9b\xb8\xfd\xdfI\xe2\xad\xe9\xac\t\x82\xcb\xfa^\xd5\x9f\xb2\x9b\xd7\xef\xde\x88\x1a\\A\xf0\x10\x8fQ\x81\xeb\xf0\xd3\x8c\xbe(\x9f\xab\xec|\xa3\x1d?\xa0\xad0\xbbJ\x0b\x07\xc8\xb8\xbf\xda\x16G\x19a\x06\x8e\xbdnp\xea\x8d\xf6\x9a\x89\xb5\x1d\xef\xd4N\x0e61pF\xb9\xad\x0f\x0c\xb3e\\\\\x01\xff\xdc\x87\xe0g\xfd\x19\x18\xb1/\'\xa1\xbd\xd9\xe9\xa32\xdb\xc7QQ\xab\xeb\x9cM\xf5\xc8\xf6d\x03?\xa5\xa6.\xbd\xeb\xf9\x07qy\x15\xa2B\x9c>\xb4\xcd\x80\x89&vj\xf8 \x85p#\x01\xae`=\x87E\x08\xce,\xe0\x18\x9c\xa4_ \xf0\xf2i\x8fT\xd2\xd6nlE\x1a*C\xd7\xf0W0\xe9\xda+\x85oiB\x98v\xb4g\xc9{HH\xe3#\x9b\xed\x1a\x96\xd3\x05Yq\x1dn\x85\xdc\xd8i_P\xc9\x80\x1b\x1f\xb1\xb8\xab\x9e:5\x0e\x80\r\x1bm\xef\x83\x89\x8eq\xb1(\x18t\\\x9a\x8a\xf2\xd1\xbc\xd2\xb1{\x05\x947\x19\x9a\xa5\xdc\xfe\x8a\x91\xfb\x13\xba\x07\x0e{\x140\x1a\xc0\xbd}\xe3\xc9\xe2\xb3~O\x919\xbe\x12\x01\x8a\xb5\x05\xff\x92\xe8M\xed\xf8_%\x1dc\xfa\'\xb6\x17\x0f\x0e\x01\x96\xe4\xad\xb1u+za&5\x8b?\xdb\x85\x8c\xe8\xbbH\x94f!\xc6\x98w\xa4K\x14\x038C\x10\xd9\xb31_\x85z\xa9 Xzm~\x83\xdc\x1cA5\nw\x06;\xc4\xf9}W\xb7-\x18\xf0\xfe\x07V\x89\x870O\xc8\xa0\xb0v\xf4\xc26\x1c\x03\x11\x00\x1f\xa7\xceH\x1a\x1bL~U\xfb\xf3\xddt\xd4z"\xfd\xc1\xf5jF<\xee5M\x85u\x13\x07\xfc\xe5\x84\xe4\x95\x9a\x88\xfb*7\xe4\xec\xb8\x08\x08:2\xc6r\xbat;f\rU\xa4J\xce\x03\xa3#I\x9e\x11*N<8\xd4\x84\xc8F\\\xc7UjEVh\xdd~<Q\xca\xc3\xc4\xa0\x9b\xbc\xada3,'</p>
+
+<p id = "cal_p" style="display:none;">Rohan Jhunjhunwala|18|Cal Berkeley</br>
+b'1;v\xac*#\xff\xdb\xcf<\x89\xf6o\xab\xd3:_\x9d\x85\xda\x15S`\xb6\xad\xed\x03\xd5`\xd7\\\xbd\x83\xd8\xed\x95_\xef^\xd2\xd5\x15p\xed\x9a\x19\xc9b\xb8\xfd\xdfI\xe2\xad\xe9\xac\t\x82\xcb\xfa^\xd5\x9f\xb2\x9b\xd7\xef\xde\x88\x1a\\A\xf0\x10\x8fQ\x81\xeb\xf0\xd3\x8c\xbe(\x9f\xab\xec|\xa3\x1d?\xa0\xad0\xbbJ\x0b\x07\xc8\xb8\xbf\xda\x16G\x19a\x06\x8e\xbdnp\xea\x8d\xf6\x9a\x89\xb5\x1d\xef\xd4N\x0e61pF\xb9\xad\x0f\x0c\xb3e\\\\\x01\xff\xdc\x87\xe0g\xfd\x19\x18\xb1/\'\xa1\xbd\xd9\xe9\xa32\xdb\xc7QQ\xab\xeb\x9cM\xf5\xc8\xf6d\x03?\xa5\xa6.\xbd\xeb\xf9\x07qy\x15\xa2B\x9c>\xb4\xcd\x80\x89&vj\xf8 \x85p#\x01\xae`=\x87E\x08\xce,\xe0\x18\x9c\xa4_ \xf0\xf2i\x8fT\xd2\xd6nlE\x1a*C\xd7\xf0W0\xe9\xda+\x85oiB\x98v\xb4g\xc9{HH\xe3#\x9b\xed\x1a\x96\xd3\x05Yq\x1dn\x85\xdc\xd8i_P\xc9\x80\x1b\x1f\xb1\xb8\xab\x9e:5\x0e\x80\r\x1bm\xef\x83\x89\x8eq\xb1(\x18t\\\x9a\x8a\xf2\xd1\xbc\xd2\xb1{\x05\x947\x19\x9a\xa5\xdc\xfe\x8a\x91\xfb\x13\xba\x07\x0e{\x140\x1a\xc0\xbd}\xe3\xc9\xe2\xb3~O\x919\xbe\x12\x01\x8a\xb5\x05\xff\x92\xe8M\xed\xf8_%\x1dc\xfa\'\xb6\x17\x0f\x0e\x01\x96\xe4\xad\xb1u+za&5\x8b?\xdb\x85\x8c\xe8\xbbH\x94f!\xc6\x98w\xa4K\x14\x038C\x10\xd9\xb31_\x85z\xa9 Xzm~\x83\xdc\x1cA5\nw\x06;\xc4\xf9}W\xb7-\x18\xf0\xfe\x07V\x89\x870O\xc8\xa0\xb0v\xf4\xc26\x1c\x03\x11\x00\x1f\xa7\xceH\x1a\x1bL~U\xfb\xf3\xddt\xd4z"\xfd\xc1\xf5jF<\xee5M\x85u\x13\x07\xfc\xe5\x84\xe4\x95\x9a\x88\xfb*7\xe4\xec\xb8\x08\x08:2\xc6r\xbat;f\rU\xa4J\xce\x03\xa3#I\x9e\x11*N<8\xd4\x84\xc8F\\\xc7UjEVh\xdd~<Q\xca\xc3\xc4\xa0\x9b\xbc\xada3,'</p>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</center>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </body>
+</html>
